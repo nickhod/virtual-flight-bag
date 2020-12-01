@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VirtualFlightBag.Api;
 
 namespace VirtualFlightBag
 {
@@ -20,9 +21,20 @@ namespace VirtualFlightBag
     /// </summary>
     public partial class MainWindow : Window
     {
+        private VFBWebServer vfbWebServer;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.vfbWebServer = new VFBWebServer();
+            this.vfbWebServer.StartWebServer();
+
+            //var pdf = PdfDocument.Load(@"C:\Temp\EGFF.pdf");
+
         }
     }
 }
