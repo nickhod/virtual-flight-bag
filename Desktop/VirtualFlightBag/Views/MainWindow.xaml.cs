@@ -21,7 +21,6 @@ namespace VirtualFlightBag
     /// </summary>
     public partial class MainWindow : Window
     {
-        private VFBWebServer vfbWebServer;
 
         public MainWindow()
         {
@@ -30,11 +29,6 @@ namespace VirtualFlightBag
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            this.vfbWebServer = new VFBWebServer();
-            this.vfbWebServer.StartWebServer();
-
-            //var pdf = PdfDocument.Load(@"C:\Temp\EGFF.pdf");
-
         }
     }
 }
