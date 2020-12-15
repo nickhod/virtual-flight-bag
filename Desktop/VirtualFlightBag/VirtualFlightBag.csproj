@@ -105,6 +105,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pdf\Core\IPdfDocument.cs" />
+    <Compile Include="Pdf\Core\PdfBookmarkCollection.cs" />
+    <Compile Include="Pdf\Core\PdfMatch.cs" />
+    <Compile Include="Pdf\Core\PdfMatches.cs" />
+    <Compile Include="Pdf\Core\PdfPageLink.cs" />
+    <Compile Include="Pdf\Core\PdfPageLinks.cs" />
+    <Compile Include="Pdf\Drawing\PdfRectangle.cs" />
+    <Compile Include="Pdf\Drawing\PdfTextSpan.cs" />
+    <Compile Include="Pdf\Enums\PdfRenderFlags.cs" />
     <Compile Include="Services\SettingsService.cs" />
     <Compile Include="Services\VersionService.cs" />
     <Compile Include="VirtualFlightBagManager.cs" />

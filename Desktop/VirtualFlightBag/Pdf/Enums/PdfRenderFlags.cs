@@ -1,7 +1,7 @@
 ﻿using System;
-using PdfiumViewer.Core;
+using VirutalFlightBag.Pdf.Core;
 
-namespace PdfiumViewer.Enums
+namespace VirutalFlightBag.Pdf.Enums
 {
     /// <summary>
     /// Flags that influence the page rendering process.

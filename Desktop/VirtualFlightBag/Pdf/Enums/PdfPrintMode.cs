@@ -1,4 +1,4 @@
-﻿namespace PdfiumViewer.Enums
+﻿namespace VirutalFlightBag.Pdf.Enums
 {
     /// <summary>
     /// Specifies the mode in which the document should be printed.
