@@ -1,4 +1,5 @@
-﻿// https://github.com/bezzad/PdfiumViewer/
+﻿// Adapted from https://github.com/bezzad/PdfiumViewer under Apache License 2.0
+// https://github.com/bezzad/PdfiumViewer/blob/master/LICENSE
 
 using System;
 using System.Collections.Generic;

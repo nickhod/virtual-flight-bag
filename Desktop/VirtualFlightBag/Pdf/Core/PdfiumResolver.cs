@@ -1,4 +1,7 @@
-﻿namespace VirutalFlightBag.Pdf.Core
+﻿// Adapted from https://github.com/bezzad/PdfiumViewer under Apache License 2.0
+// https://github.com/bezzad/PdfiumViewer/blob/master/LICENSE
+
+namespace VirutalFlightBag.Pdf.Core
 {
     public class PdfiumResolver
     {

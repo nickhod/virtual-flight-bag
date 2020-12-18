@@ -107,12 +107,23 @@
     </ApplicationDefinition>
     <Compile Include="Pdf\Core\IPdfDocument.cs" />
     <Compile Include="Pdf\Core\PdfBookmarkCollection.cs" />
+    <Compile Include="Pdf\Core\PdfException.cs" />
+    <Compile Include="Pdf\Core\PdfFile.cs" />
+    <Compile Include="Pdf\Core\PdfInformation.cs" />
+    <Compile Include="Pdf\Core\PdfLibrary.cs" />
     <Compile Include="Pdf\Core\PdfMatch.cs" />
     <Compile Include="Pdf\Core\PdfMatches.cs" />
     <Compile Include="Pdf\Core\PdfPageLink.cs" />
     <Compile Include="Pdf\Core\PdfPageLinks.cs" />
+    <Compile Include="Pdf\Core\PdfPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pdf\Core\PdfPrintMultiplePages.cs" />
+    <Compile Include="Pdf\Core\PdfPrintSettings.cs" />
     <Compile Include="Pdf\Drawing\PdfRectangle.cs" />
     <Compile Include="Pdf\Drawing\PdfTextSpan.cs" />
+    <Compile Include="Pdf\Enums\PdfError.cs" />
+    <Compile Include="Pdf\Enums\PdfPrintMode.cs" />
     <Compile Include="Pdf\Enums\PdfRenderFlags.cs" />
     <Compile Include="Services\SettingsService.cs" />
     <Compile Include="Services\VersionService.cs" />

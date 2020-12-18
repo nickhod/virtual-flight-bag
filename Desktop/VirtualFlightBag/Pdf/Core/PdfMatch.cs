@@ -1,4 +1,6 @@
 ﻿
+using VirutalFlightBag.Pdf.Drawing;
+
 namespace VirutalFlightBag.Pdf.Core
 {
     public class PdfMatch

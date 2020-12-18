@@ -1,8 +1,11 @@
-﻿using PdfiumViewer.Core;
+﻿// Adapted from https://github.com/bezzad/PdfiumViewer under Apache License 2.0
+// https://github.com/bezzad/PdfiumViewer/blob/master/LICENSE
 
 #pragma warning disable 1591
 
-namespace PdfiumViewer.Enums
+using VirutalFlightBag.Pdf.Core;
+
+namespace VirutalFlightBag.Pdf.Enums
 {
     public enum PdfError
     {

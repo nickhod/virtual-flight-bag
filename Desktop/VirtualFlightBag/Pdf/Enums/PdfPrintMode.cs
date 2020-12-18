@@ -1,4 +1,7 @@
-﻿namespace VirutalFlightBag.Pdf.Enums
+﻿// Adapted from https://github.com/bezzad/PdfiumViewer under Apache License 2.0
+// https://github.com/bezzad/PdfiumViewer/blob/master/LICENSE
+
+namespace VirutalFlightBag.Pdf.Enums
 {
     /// <summary>
     /// Specifies the mode in which the document should be printed.
