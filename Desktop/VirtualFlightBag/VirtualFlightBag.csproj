@@ -105,6 +105,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Api\ViewModels\DirectoryViewModel.cs" />
+    <Compile Include="Api\ViewModels\DocumentViewModel.cs" />
+    <Compile Include="Api\ViewModels\FileType.cs" />
     <Compile Include="Pdf\Core\IPdfDocument.cs" />
     <Compile Include="Pdf\Core\PdfBookmarkCollection.cs" />
     <Compile Include="Pdf\Core\PdfException.cs" />

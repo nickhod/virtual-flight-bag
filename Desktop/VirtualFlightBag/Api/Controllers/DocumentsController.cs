@@ -3,6 +3,7 @@ using EmbedIO.Routing;
 using EmbedIO.WebApi;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,10 +24,17 @@ namespace VirtualFlightBag.Api.Controllers
         //    return $"Hello, {name}";
         //}
 
-        [Route(HttpVerbs.Get, "/goodbye")]
-        public async Task HelloWorld()
+        [Route(HttpVerbs.Get, "/{path}")]
+        public async Task FileList(string path)
         {
-            string ret = null;
+            var baseDocumentsPath = VirtualFlightBagManager.Instance.Settings.DocumentsDirectory;
+
+            string ret = "";
+
+            var files = Directory.GetFiles(baseDocumentsPath);
+            var directories = Directory.GetDirectories(baseDocumentsPath);
+
+
             try
             {
                 ret = "Goodbye from webserver @ " + DateTime.Now.ToLongTimeString();

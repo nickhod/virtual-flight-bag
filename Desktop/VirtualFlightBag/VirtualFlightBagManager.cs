@@ -18,6 +18,11 @@ namespace VirtualFlightBag
         private SettingsService settingsService;
         private Settings settings;
 
+        public Settings Settings
+        {
+            get { return this.settings; }
+        }
+
         public VirtualFlightBagManager()
         {
             this.settingsService = new SettingsService();
