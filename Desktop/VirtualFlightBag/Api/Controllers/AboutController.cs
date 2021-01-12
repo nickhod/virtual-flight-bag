@@ -13,15 +13,7 @@ namespace VirtualFlightBag.Api.Controllers
     {
         public AboutController() : base()
         {
-
         }
-
-
-        //[Route(HttpVerbs.Get, "/api/hello/{name}")]
-        //public string SayHello(string name)
-        //{
-        //    return $"Hello, {name}";
-        //}
 
         [Route(HttpVerbs.Get, "/hello")]
         public async Task HelloWorld()

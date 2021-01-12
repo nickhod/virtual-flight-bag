@@ -14,26 +14,16 @@ namespace VirtualFlightBag.Api.Controllers
     {
         public DocumentsController() : base()
         {
-
         }
-
-
-        //[Route(HttpVerbs.Get, "/api/hello/{name}")]
-        //public string SayHello(string name)
-        //{
-        //    return $"Hello, {name}";
-        //}
 
         [Route(HttpVerbs.Get, "/{path}")]
         public async Task FileList(string path)
         {
             var baseDocumentsPath = VirtualFlightBagManager.Instance.Settings.DocumentsDirectory;
-
             string ret = "";
 
             var files = Directory.GetFiles(baseDocumentsPath);
             var directories = Directory.GetDirectories(baseDocumentsPath);
-
 
             try
             {
@@ -41,11 +31,24 @@ namespace VirtualFlightBag.Api.Controllers
             }
             catch (Exception ex)
             {
-                //
                 int i = 0;
             }
             await HttpContext.SendDataAsync(ret);
 
+        }
+
+        [Route(HttpVerbs.Post, "/pin/{path}")]
+        public async Task PinDocument(string path)
+        {
+            string ret = "";
+            await HttpContext.SendDataAsync(ret);
+        }
+
+        [Route(HttpVerbs.Post, "/unpin/{path}")]
+        public async Task UnpinDocument(string path)
+        {
+            string ret = "";
+            await HttpContext.SendDataAsync(ret);
         }
     }
 }

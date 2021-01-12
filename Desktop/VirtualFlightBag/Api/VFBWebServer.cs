@@ -44,14 +44,24 @@ namespace VirtualFlightBag.Api
             var server = new WebServer(o => o
                 .WithUrlPrefix(url)
                 .WithMode(HttpListenerMode.EmbedIO))
-                // First, we will configure our web server by adding Modules.
                 .WithLocalSessionManager()
+
                 .WithWebApi("/about", m => m.WithController<AboutController>())
+                .WithWebApi("/airpots", m => m.WithController<AirportsController>())
+                .WithWebApi("/chartfox", m => m.WithController<ChartFoxController>())
                 .WithWebApi("/documents", m => m.WithController<DocumentsController>())
+                .WithWebApi("/littlenavmap", m => m.WithController<LittleNavMapController>())
+                .WithWebApi("/maps", m => m.WithController<MapsController>())
+                .WithWebApi("/navigraph", m => m.WithController<NavigraphController>())
+                .WithWebApi("/notes", m => m.WithController<NotesController>())
+                .WithWebApi("/settings", m => m.WithController<SettingsController>())
+                .WithWebApi("/vatsim", m => m.WithController<VATSIMController>())
+
                 //.WithModule(new WebSocketChatModule("/chat"))
                 //.WithModule(new WebSocketTerminalModule("/terminal"))
                 //.WithStaticFolder("/", HtmlRootPath, true, m => m
                 //.WithContentCaching(UseFileCache)) // Add static files after other modules to avoid conflicts
+
                 .WithModule(new ActionModule("/", HttpVerbs.Any, ctx => ctx.SendDataAsync(new { Message = "Error" })));
 
             // Listen for state changes.
